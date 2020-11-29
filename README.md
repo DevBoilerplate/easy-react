@@ -13,7 +13,7 @@
 - [x] 支持`typescript`
 - [x] 支持`husky`工作流控制
 - [ ] 支持`less`
-- [ ] 支持`react-router-dom`
+- [x] 支持`react-router-dom`
 - [x] 支持热更新
 - [x] `webpack-bundle-analyzer`支持打包大小分析
 

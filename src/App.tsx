@@ -1,25 +1,18 @@
 import React from "react"
+import { BrowserRouter as Router, Link, Route } from "react-router-dom"
 import "./App.css"
+import Home from "./pages/Home"
 
-function App() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-                测试
-            </header>
+const App = () => (
+    <div className="App">
+        <div>Hello World</div>
+        <div>
+            <Router>
+                <Link to="/">首页</Link>
+                <a href="https://www.baidu.com">百度</a>
+                <Route path="/" exact component={Home} />
+            </Router>
         </div>
-    )
-}
-
+    </div>
+)
 export default App
