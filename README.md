@@ -11,13 +11,17 @@
 - [x] `eslint`代码质量约束
 - [x] `prettier`代码风格约束
 - [x] 支持`typescript`
-- [ ] 支持`husky`工作流控制
+- [x] 支持`husky`工作流控制
 - [ ] 支持`less`
 - [ ] 支持`react-router-dom`
+- [x] 支持热更新
+- [x] `webpack-bundle-analyzer`支持打包大小分析
 
 ## bugs
 
 - React17 JSX转化导致tsconfig报错问题
+- craco对CRA4.x的eslint报错问题 [#205](https://github.com/gsoft-inc/craco/issues/205)
+- craco-less加载失败
 
 ## 规范化流程
 

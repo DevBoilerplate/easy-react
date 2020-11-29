@@ -19,7 +19,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "declaration": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "rootDir": "src",
     "outDir": "build"
   },
