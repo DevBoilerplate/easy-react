@@ -4,7 +4,7 @@
 
 # 路由封装相关
 /src/routes-core.tsx
-/src/route.ts
+/src/routes.ts
 
 # dependencies
 /node_modules
