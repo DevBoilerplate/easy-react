@@ -2,6 +2,10 @@
 
 .eslintcache
 
+# 路由封装相关
+/src/routes-core.tsx
+/src/route.ts
+
 # dependencies
 /node_modules
 /.pnp

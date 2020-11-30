@@ -1,9 +1,9 @@
-import React from "react"
+import React, { FC } from "react"
 import { BrowserRouter as Router, Link, Route } from "react-router-dom"
 import "./App.css"
 import Home from "./pages/Home"
 
-const App = () => (
+const App: FC = () => (
     <div className="App">
         <div>Hello World</div>
         <div>
