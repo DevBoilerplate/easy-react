@@ -15,12 +15,38 @@
 - [x] 支持`react-router-dom`
 - [x] 支持热更新
 - [x] `webpack-bundle-analyzer`支持打包大小分析
-- [ ] 支持`less
+- [x] 支持`less`
+
+## Attentions
+
+- 关于开启cssModules的问题（默认不开启cssModules）
+
+> 【less和cssModules在`url(...)`语句计算相对路径位置的问题[issue解释](https://github.com/webpack-contrib/less-loader/issues/109#issuecomment-253797335)】
+
+开启cssModules的配置
+
+```js
+// craco.config.js配置文件
+
+const CracoLessPlugin = require("craco-less")
+
+module.exports = {
+  plugins: [
+    {
+      plugin: CracoLessPlugin,
+      options: {
+        cssLoaderOptions: {
+          modules: { localIdentName: "[local]_[hash:base64:5]" }
+        }
+      }
+    }
+  ]
+}
+```
 
 ## bugs
 
 - craco对CRA4.x的eslint报错问题 [#205](https://github.com/gsoft-inc/craco/issues/205)
-- craco-less加载失败
 
 ## References
 

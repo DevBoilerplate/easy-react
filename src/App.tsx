@@ -1,18 +1,20 @@
-import React, { FC } from "react"
-import { BrowserRouter as Router, Link, Route } from "react-router-dom"
-import "./App.css"
-import Home from "./pages/Home"
+import { FC } from "react"
+// import { BrowserRouter as Router, Link, Route } from "react-router-dom"
+import "./App.less"
+// import Home from "./pages/Home"
 
 const App: FC = () => (
     <div className="App">
-        <div>Hello World</div>
-        <div>
-            <Router>
-                <Link to="/">首页</Link>
-                <a href="https://www.baidu.com">百度</a>
-                <Route path="/" exact component={Home} />
-            </Router>
-        </div>
+        <h1>easy-react 定制React SPA开发</h1>
+        <span>基于React 17.x实践</span>
+        <ul>
+            <li>
+                <a href="https://github.com/HerbertHe/easy-react">GitHub</a>
+            </li>
+            <li>
+                <a href="https://github.com/NucoTech">Nuco Tech</a>
+            </li>
+        </ul>
     </div>
 )
 export default App

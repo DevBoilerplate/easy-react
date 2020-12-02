@@ -1,5 +1,8 @@
 const { whenDev } = require("@craco/craco")
+// Craco插件
 const FastRefreshCracoPlugin = require("craco-fast-refresh")
+const CracoLessPlugin = require("craco-less")
+// Webpack插件
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
     .BundleAnalyzerPlugin
 const WebpackBar = require("webpackbar")
@@ -20,7 +23,7 @@ module.exports = {
     },
     plugins: [
         {
-            plugin: { FastRefreshCracoPlugin },
+            plugin: { CracoLessPlugin },
             options: {
                 lessLoaderOptions: {
                     lessOptions: {
@@ -31,6 +34,9 @@ module.exports = {
                     }
                 }
             }
+        },
+        {
+            plugin: FastRefreshCracoPlugin
         }
     ]
 }
